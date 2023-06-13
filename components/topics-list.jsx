@@ -1,4 +1,6 @@
 import React from "react";
+import Image from 'next/image';
+
 import PropTypes from "prop-types";
 
 const TopicsList = (props) => {
@@ -13,7 +15,7 @@ const TopicsList = (props) => {
           })}
         </ul>
       </div>
-      <button className="bg-orange-600 p-2 h-fit">Write</button>
+      <button className="flex items-center bg-orange-600 p-1 h-fit">Write<Image className='text-white' src='/chevron-forward-outline.svg' width={20} height={20} alt='button image'/></button>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 // import styled from 'styled-components';
 // import PropTypes from 'prop-types';
 
@@ -21,7 +22,7 @@ const Header = () => {
               <li key='4' className='border-b-4 border-orange-600'>Mission</li>
               <li key='5'>Product</li>
             </ul>
-            <button className='bg-orange-600 p-1 h-fit place-self-end'>Add Topic </button>
+            <button className='flex items-center bg-orange-600 p-1 h-fit place-self-end'>Add Topic<Image className='text-white' src='/chevron-forward-outline.svg' width={20} height={20} alt='button image'/> </button>
           </nav>
         </header>
     </div>;
