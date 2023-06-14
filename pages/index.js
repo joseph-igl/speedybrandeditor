@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
 import Header from "../components/header";
 import RecommendedTopics from "../components/Recommended-topics";
+import Modal from "../components/modal";
 export default function Home() {
   return (
     <div className="">
@@ -14,6 +14,7 @@ export default function Home() {
       <main className="p-6">
         <Header />
         <RecommendedTopics />
+        <Modal />
       </main>
 
       <footer className=""></footer>

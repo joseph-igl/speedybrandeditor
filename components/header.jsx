@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { useAuth } from '../context/context';
 // import styled from 'styled-components';
 // import PropTypes from 'prop-types';
 
@@ -11,6 +12,7 @@ import Image from 'next/image';
  * 
  */
 const Header = () => {
+  const {open,onClose} = useAuth();
     return <div>
          <header className=''>
           <h1 className='text-[2rem] '>Categories</h1>
@@ -22,7 +24,9 @@ const Header = () => {
               <li key='4' className='border-b-4 border-orange-600'>Mission</li>
               <li key='5'>Product</li>
             </ul>
-            <button className='flex items-center bg-orange-600 p-1 h-fit place-self-end'>Add Topic<Image className='text-white' src='/chevron-forward-outline.svg' width={20} height={20} alt='button image'/> </button>
+            <button className='flex items-center bg-orange-600 p-1 h-fit place-self-end' onClick={()=>{
+              open()
+            }}>Add Topic<Image className='text-white' src='/chevron-forward-outline.svg' width={20} height={20} alt='button image'/> </button>
           </nav>
         </header>
     </div>;
