@@ -24,7 +24,7 @@ const Header = () => {
               <li key='4' className='border-b-4 border-orange-600'>Mission</li>
               <li key='5'>Product</li>
             </ul>
-            <button className='flex items-center bg-orange-600 p-1 h-fit place-self-end' onClick={()=>{
+            <button className='flex items-center bg-orange-600 p-1 h-fit place-self-end px-1 py-2' onClick={()=>{
               open()
             }}>Add Topic<Image className='text-white' src='/chevron-forward-outline.svg' width={20} height={20} alt='button image'/> </button>
           </nav>

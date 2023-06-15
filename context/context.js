@@ -77,11 +77,17 @@ export function AuthProvider({ children }) {
   function addTopics(topic) {
     setTopics((prev) => [...prev, topic]);
   }
+  function deleteTopics(id) {
+    let temp = topics.filter((item) => item?.id !== id);
+    console.log(temp);
+    setTopics([...temp]);
+  }
   const value = {
     show,
     onClose,
     open,
     addTopics,
+    deleteTopics,
     topics,
   };
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

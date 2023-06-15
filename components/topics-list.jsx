@@ -15,7 +15,7 @@ const TopicsList = (props) => {
           })}
         </ul>
       </div>
-      <button className="flex items-center bg-orange-600 p-1 h-fit" onClick={()=>{
+      <button className="flex items-center bg-orange-600 p-1 h-fit px-1 py-2" onClick={()=>{
         Router.push(`/editor?id=${uuid}`)
       }}>Write<Image className='text-white' src='/chevron-forward-outline.svg' width={20} height={20} alt='button image'/></button>
     </div>
